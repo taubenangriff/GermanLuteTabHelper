@@ -46,7 +46,7 @@
     { "p", "high G" },
     { "p-", "high C"},
     { "q", "low C#" },
-    { "q-", "middle F#"}
+    { "q-", "middle F#"},
     { "r", "middle F#" },
     { "r-", "middle B"},
     { "s", "middle Bb" },
