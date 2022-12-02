@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Dictionary<String, String> Values = new()
+﻿Dictionary<String?, String> Values = new()
 {
     { "1", "A string" },
     { "2", "D string" },
@@ -42,17 +40,15 @@ Dictionary<String, String> Values = new()
     { "z", "middle B" }
 };
 
-Console.WriteLine("Hello, World!");
-
-String fuck; 
-while((fuck = Console.ReadLine()) != "Exit")
+String? input; 
+while((input = Console.ReadLine()) != "Exit")
 {
-    if (Values.TryGetValue(fuck, out var result))
+    if (Values.TryGetValue(input, out var result))
     {
-        Console.WriteLine($"Note for {fuck} is {result}");
+        Console.WriteLine($"Note for {input} is {result}");
     }
     else
     {
-        Console.WriteLine($"no result for {fuck}");
+        Console.WriteLine($"no result for {input}");
     }
 }
